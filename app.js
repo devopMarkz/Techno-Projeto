@@ -19,7 +19,7 @@ const vm = new Vue({
 
     methods: {
         buscarProdutos(){
-            fetch("http://127.0.0.1:5500/api/produtos.json")
+            fetch("./api/produtos.json")
             .then(response => response.json())
             .then(data => this.produtos = data);
         },
